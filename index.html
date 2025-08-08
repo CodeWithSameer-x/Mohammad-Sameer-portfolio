@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Sameer Rafiyoddin - Portfolio</title>
+    <meta name="description" content="Portfolio of Mohammad Sameer Rafiyoddin - CSE Student and Aspiring Software Developer from MIT Aurangabad with expertise in Python, C, HTML, CSS, and PHP">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="floating-shape bg-blue-500 shape-1"></div>
+        <div class="floating-shape bg-red-500 shape-2"></div>
+        <div class="floating-shape bg-purple-500 shape-3"></div>
+        <div class="floating-shape bg-green-500 shape-4"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn active" data-theme="dark" aria-label="Switch to dark theme"></button>
+        <button class="theme-btn" data-theme="light" aria-label="Switch to light theme"></button>
+        <button class="theme-btn theme-neon" data-theme="neon" aria-label="Switch to neon theme"></button>
+        <button class="theme-btn theme-gradient" data-theme="gradient" aria-label="Switch to gradient theme"></button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-brand">MSR</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#education" class="mobile-nav-link">Education</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#certificates" class="mobile-nav-link">Certificates</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="profile.png" alt="Mohammad Sameer Rafiyoddin" class="avatar-img">
+                <div class="avatar-fallback">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                Mohammad <span class="gradient-text">Sameer</span>
+            </h1>
+            <h2 class="hero-subtitle">Rafiyoddin</h2>
+            <p class="hero-description">CSE Student & Aspiring Software Developer</p>
+            <p class="hero-details">
+                Currently pursuing B.Tech in Computer Science from MIT Aurangabad. 
+                Passionate about creating innovative solutions with modern technologies.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-secondary">
+                    <i class="fas fa-download"></i>Download CV
+                </button>
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                    <i class="fas fa-eye"></i>View Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-subtitle">Hello! I'm Mohammad Sameer Rafiyoddin</h3>
+                    <p class="about-description">
+                        I'm from Dharmabad, District Nanded, Maharashtra, and I'm currently pursuing my B.Tech degree 
+                        in Computer Science and Engineering from Maharashtra Institute of Technology (MIT), Aurangabad - 
+                        an autonomous institute.
+                    </p>
+                    <p class="about-description">
+                        I've successfully completed my first year with an impressive CGPA of 8.89, demonstrating my dedication 
+                        to academic excellence. During my journey, I've worked on 2-3 significant projects and earned 
+                        numerous certificates that showcase my continuous learning and skill development.
+                    </p>
+                    <p class="about-description">
+                        Recently, I secured an internship at CodeSoft in Python programming, which has further enhanced my 
+                        practical skills and industry exposure.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value primary">8.89</div>
+                            <div class="stat-label">CGPA First Year</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value secondary">3+</div>
+                            <div class="stat-label">Completed Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value primary">Multiple</div>
+                            <div class="stat-label">Certificates Earned</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value secondary">CodeSoft</div>
+                            <div class="stat-label">Python Internship</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <h4 class="card-title">Quick Facts</h4>
+                    <div class="facts-list">
+                        <div class="fact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dharmabad, Nanded, Maharashtra</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>MIT Aurangabad</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class="fas fa-code"></i>
+                            <span>CSE Student & Developer</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>CodeSoft Python Intern</span>
+                        </div>
+                    </div>
+                    <div class="interests">
+                        <h5 class="interests-title">Interests</h5>
+                        <div class="interest-tags">
+                            <span class="tag blue">Web Development</span>
+                            <span class="tag red">Python</span>
+                            <span class="tag green">Problem Solving</span>
+                            <span class="tag purple">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3 class="education-title">Bachelor of Technology - Computer Science & Engineering</h3>
+                            <h4 class="education-institute">Maharashtra Institute of Technology (MIT), Aurangabad</h4>
+                            <p class="education-type">Autonomous Institute</p>
+                            <div class="education-year">
+                                <span class="year-badge">2023 - 2027</span>
+                            </div>
+                            <p class="education-description">
+                                Successfully completed first year with excellent academic performance and 
+                                worked on multiple projects enhancing programming skills.
+                            </p>
+                            <div class="cgpa">
+                                <span class="cgpa-text">CGPA: 8.89</span>
+                            </div>
+                            <div class="subject-tags">
+                                <span class="tag blue">Data Structures</span>
+                                <span class="tag purple">Algorithms</span>
+                                <span class="tag green">Programming</span>
+                                <span class="tag red">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-dot green"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content-right">
+                        <div class="education-card">
+                            <h3 class="education-title">Python Programming Intern</h3>
+                            <h4 class="education-institute">CodeSoft</h4>
+                            <p class="education-type">Industry Internship Program</p>
+                            <div class="education-year">
+                                <span class="year-badge current">Current</span>
+                            </div>
+                            <p class="education-description">
+                                Gaining practical experience in Python development, working on real-world projects and 
+                                enhancing programming skills in a professional environment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-dot blue"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90%" style="background: linear-gradient(to right, #3b82f6, #9333ea);"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85%" style="background: linear-gradient(to right, #10b981, #3b82f6);"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PHP</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75%" style="background: linear-gradient(to right, #a855f7, #ec4899);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="skill-title">Web Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="95%" style="background: linear-gradient(to right, #f97316, #ef4444);"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90%" style="background: linear-gradient(to right, #3b82f6, #06b6d4);"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Responsive Design</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80%" style="background: linear-gradient(to right, #10b981, #14b8a6);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="skill-title">Other Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Problem Solving</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88%" style="background: linear-gradient(to right, #eab308, #f97316);"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Project Management</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75%" style="background: linear-gradient(to right, #ec4899, #f43f5e);"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Team Collaboration</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85%" style="background: linear-gradient(to right, #6366f1, #a855f7);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Innovative web application showcasing modern development practices and user-centric design principles.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image blue-gradient">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Web Application</h3>
+                            <div class="project-links">
+                                <button class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="project-link">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Innovative web application showcasing modern development practices and user-centric design principles.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag blue">HTML</span>
+                            <span class="tag green">CSS</span>
+                            <span class="tag yellow">JavaScript</span>
+                            <span class="tag red">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image green-gradient">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Python Project</h3>
+                            <div class="project-links">
+                                <button class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="project-link">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Python-based solution demonstrating algorithmic thinking and efficient problem-solving approaches.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag blue">Python</span>
+                            <span class="tag green">Data Science</span>
+                            <span class="tag purple">Algorithm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image red-gradient">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Full Stack Project</h3>
+                            <div class="project-links">
+                                <button class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="project-link">
+                                    <i class="fas fa-code"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive full-stack application featuring responsive design and seamless user experience.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag red">HTML</span>
+                            <span class="tag blue">CSS</span>
+                            <span class="tag yellow">PHP</span>
+                            <span class="tag purple">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    I hold 5-6 certificates in various technologies and programming languages, 
+                    demonstrating my commitment to continuous learning and skill development.
+                </p>
+            </div>
+            <div class="certificates-showcase">
+                <div class="certificate-main">
+                    <i class="fas fa-certificate"></i>
+                    <h3>My Certificates (5-6)</h3>
+                    <p>
+                        I hold 5-6 certificates in various technologies and programming languages, demonstrating 
+                        my commitment to continuous learning and skill development.
+                    </p>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-download"></i>View All Certificates
+                    </button>
+                </div>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <img src="c1.png" alt="Certificate 1" class="certificate-img">
+                    <div class="certificate-fallback">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <p class="certificate-label">Certificate 1</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="c2.png" alt="Certificate 2" class="certificate-img">
+                    <div class="certificate-fallback">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <p class="certificate-label">Certificate 2</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="c3.png" alt="Certificate 3" class="certificate-img">
+                    <div class="certificate-fallback">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <p class="certificate-label">Certificate 3</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="c4.png" alt="Certificate 4" class="certificate-img">
+                    <div class="certificate-fallback">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <p class="certificate-label">Certificate 4</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="c5.png" alt="Certificate 5" class="certificate-img">
+                    <div class="certificate-fallback">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <p class="certificate-label">Certificate 5</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="c6.png" alt="Certificate 6" class="certificate-img">
+                    <div class="certificate-fallback">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <p class="certificate-label">Certificate 6</p>
+                </div>
+            </div>
+            <div class="certificates-types">
+                <div class="cert-type-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python Programming</h3>
+                    <p>Certified in Python development through CodeSoft internship program</p>
+                    <span class="cert-status green">Certified</span>
+                </div>
+                <div class="cert-type-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Web Development</h3>
+                    <p>Multiple certificates in HTML, CSS, and modern web technologies</p>
+                    <span class="cert-status blue">Multiple</span>
+                </div>
+                <div class="cert-type-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Academic Excellence</h3>
+                    <p>Recognition for outstanding academic performance and project work</p>
+                    <span class="cert-status yellow">Excellence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Let's Connect! I'm always open to discussing new opportunities, collaborations, 
+                    or just having a chat about technology and innovation.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">Let's Connect</h3>
+                    <p class="contact-description">
+                        I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and innovation. Feel free to reach out!
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Dharmabad, Nanded, Maharashtra</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Institute</h4>
+                                <p>MIT Aurangabad</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Current Status</h4>
+                                <p>CodeSoft Python Intern</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Connect on Social Media</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/mohammad-sameer-rafiyoddin-08b01533b" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/CodeWithSameer-x" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://instagram.com/itz_mohammad_sameer_75" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:sameerrafiyoddin@gmail.com" class="social-icon">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send me a message</h3>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Discussion">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project or just say hello!" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">Mohammad Sameer Rafiyoddin</div>
+                <p class="footer-subtitle">CSE Student & Aspiring Software Developer</p>
+                <p class="footer-copyright">
+                    © 2024 Mohammad Sameer Rafiyoddin. All rights reserved. | Designed with ❤️ and modern web technologies.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-text">
+                <h4 class="toast-title">Message Sent!</h4>
+                <p class="toast-description">Thank you for your message! I'll get back to you soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
